@@ -1,0 +1,3 @@
+2025-06-18 20:33:24 INFO  [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-18 20:33:24 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - d2 - Shutdown initiated...
+2025-06-18 20:33:24 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - d2 - Shutdown completed.

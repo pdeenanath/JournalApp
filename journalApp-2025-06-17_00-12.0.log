@@ -1,0 +1,20 @@
+2025-06-17 00:12:01 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-17 00:12:01 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-17 00:12:01 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-17 00:12:01 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-17 00:12:01 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-17 00:12:01 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2889 ms
+2025-06-17 00:12:02 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-17 00:12:02 INFO  [main] com.zaxxer.hikari.HikariDataSource - d2 - Starting...
+2025-06-17 00:12:03 INFO  [main] com.zaxxer.hikari.pool.HikariPool - d2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e5ebdfe
+2025-06-17 00:12:03 INFO  [main] com.zaxxer.hikari.HikariDataSource - d2 - Start completed.
+2025-06-17 00:12:03 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-17 00:12:04 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-17 00:12:05 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-17 00:12:06 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@25f67aea, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f93303f, org.springframework.security.web.context.SecurityContextHolderFilter@7c290246, org.springframework.security.web.header.HeaderWriterFilter@102dff25, org.springframework.web.filter.CorsFilter@62c02089, org.springframework.security.web.authentication.logout.LogoutFilter@6a35cccf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5a86112a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d305059, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3304362e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3359217d, org.springframework.security.web.access.ExceptionTranslationFilter@3c5d60db, org.springframework.security.web.access.intercept.AuthorizationFilter@12faeada]
+2025-06-17 00:12:06 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-17 00:12:06 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-06-17 00:12:06 INFO  [main] n.e.journalApp.JournalApplication - Started JournalApplication in 9.385 seconds (process running for 10.952)
+2025-06-17 00:12:10 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-17 00:12:10 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-17 00:12:10 INFO  [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
