@@ -2,7 +2,9 @@ package net.engineeringdigest.journalApp.entity;
 
 import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.springframework.stereotype.Indexed;
 
@@ -12,6 +14,8 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "users_details")
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserEntity {
 
     @Id
@@ -19,6 +23,9 @@ public class UserEntity {
     private Long id;
     @Column(unique = true, nullable = false)
     private String userName;
+
+    private String email;
+    private boolean sentimentAnalysis;
     @Column(nullable = false)
     private String password;
 
