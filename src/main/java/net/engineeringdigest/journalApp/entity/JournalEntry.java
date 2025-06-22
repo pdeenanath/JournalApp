@@ -5,6 +5,7 @@ import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import net.engineeringdigest.journalApp.enums.Sentiment;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -26,5 +27,6 @@ public class JournalEntry {
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
     private UserEntity user;
+    private Sentiment sentiment;
 
 }

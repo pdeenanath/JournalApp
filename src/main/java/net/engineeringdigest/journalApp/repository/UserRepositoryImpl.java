@@ -25,12 +25,12 @@ public class UserRepositoryImpl {
 //        return entityManager.createQuery(cq).getResultList();
 //    }
 
-    public long getUserForSA(String email, boolean sentimentAnalysis) {
+    public List<UserEntity> getUserForSA(String email, boolean sentimentAnalysis) {
         CriteriaBuilder cb = entityManager.getCriteriaBuilder();
-        CriteriaQuery<Long> cq = cb.createQuery(Long.class);
+        CriteriaQuery<UserEntity> cq = cb.createQuery(UserEntity.class);
         Root<UserEntity> root = cq.from(UserEntity.class);
 
-        cq.select(cb.count(root))
+        cq.select(root)
                 .where(
                         cb.or(
                                 cb.equal(root.get("email"), email),
@@ -39,7 +39,8 @@ public class UserRepositoryImpl {
                         )
                 );
 
-        return entityManager.createQuery(cq).getSingleResult();
+        return entityManager.createQuery(cq).getResultList();
     }
-    }
+
+}
 
