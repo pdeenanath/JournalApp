@@ -28,7 +28,7 @@ public class AdminController {
 
     @PostMapping("/create-admin-user")
     public void createUser(@RequestBody UserEntity user){
-        userService.saveAmin(user);
+        userService.saveAdmin(user);
     }
 
 }

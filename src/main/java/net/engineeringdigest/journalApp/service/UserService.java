@@ -43,7 +43,7 @@ public class UserService {
 
     }
 
-    public void saveAmin(UserEntity user) {
+    public void saveAdmin(UserEntity user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         user.setRoles(Arrays.asList("USER","ADMIN"));
         userRepository.save(user);
