@@ -18,23 +18,30 @@ public class RedisService {
 
     public <T> T get(String key, Class<T> entryClass) {
         try {
-            Object o = redisTemplate.opsForValue().get(key);
+            String json = (String) redisTemplate.opsForValue().get(key);
+            if (json == null) {
+                log.info("Cache miss for key: {}", key);
+                return null;
+            }
+            log.info("Cache HIT for key: {}", key);
             ObjectMapper mapper = new ObjectMapper();
-            return mapper.readValue(o.toString(), entryClass);
+            return mapper.readValue(json, entryClass);
         } catch (Exception e) {
-            log.error("Exception", e);
+            log.error("Redis GET Exception", e);
             return null;
         }
 
     }
     public void set(String key, Object o,Long ttl) {
+        String jsonValue = null;
         try {
             ObjectMapper objectMapper = new ObjectMapper();
-            String jsonValue = objectMapper.writeValueAsString(o);
-            redisTemplate.opsForValue().set(key,o.toString(),ttl, TimeUnit.SECONDS);
+            jsonValue = objectMapper.writeValueAsString(o);
+            log.info("Caching weather data. Key: {}, Value: {}", key, jsonValue);
+            redisTemplate.opsForValue().set(key, jsonValue, ttl, TimeUnit.SECONDS);
 
         } catch (Exception e) {
-            log.error("Exception", e);
+            log.error("Redis SET Exception", e);
 
         }
 

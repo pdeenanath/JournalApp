@@ -43,8 +43,6 @@ public class UserController {
         UserEntity userInDB = userService.findByUserName(userName);
         userInDB.setUserName(user.getUserName());
         userInDB.setPassword(user.getPassword());
-        userInDB.setEmail(user.getEmail());
-        userInDB.setSentimentAnalysis(user.isSentimentAnalysis());
         userService.saveNewUser(userInDB);
 
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
