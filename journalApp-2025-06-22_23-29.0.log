@@ -1,9 +1,6 @@
-2025-06-21 20:12:01 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-21 20:12:01 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-06-21 20:12:01 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2025-06-21 20:12:41 WARN  [http-nio-8080-exec-5] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
-2025-06-21 20:12:41 ERROR [http-nio-8080-exec-5] o.h.e.jdbc.spi.SqlExceptionHelper - Duplicate entry 'Deenu' for key 'users_details.UK_r1nre0dv7fm0trc880htuooot'
-2025-06-21 20:12:41 ERROR [http-nio-8080-exec-5] n.e.journalApp.service.UserService - Error Occurred
+2025-06-22 23:29:59 WARN  [http-nio-8080-exec-8] o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+2025-06-22 23:29:59 ERROR [http-nio-8080-exec-8] o.h.e.jdbc.spi.SqlExceptionHelper - Duplicate entry 'Deenu' for key 'users_details.UK_r1nre0dv7fm0trc880htuooot'
+2025-06-22 23:29:59 ERROR [http-nio-8080-exec-8] n.e.journalApp.service.UserService - Error Occurred
 org.springframework.dao.DataIntegrityViolationException: could not execute statement [Duplicate entry 'Deenu' for key 'users_details.UK_r1nre0dv7fm0trc880htuooot'] [insert into users_details (email,password,sentiment_analysis,user_name) values (?,?,?,?)]; SQL [insert into users_details (email,password,sentiment_analysis,user_name) values (?,?,?,?)]; constraint [users_details.UK_r1nre0dv7fm0trc880htuooot]
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290)
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
@@ -17,7 +14,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
-	at jdk.proxy2/jdk.proxy2.$Proxy119.save(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy120.save(Unknown Source)
 	at net.engineeringdigest.journalApp.service.UserService.saveNewUser(UserService.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -149,11 +146,11 @@ Caused by: org.hibernate.exception.ConstraintViolationException: could not execu
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364)
-	at jdk.proxy2/jdk.proxy2.$Proxy113.persist(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy114.persist(Unknown Source)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
-	at jdk.proxy2/jdk.proxy2.$Proxy113.persist(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy114.persist(Unknown Source)
 	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:618)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -188,7 +185,7 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'D
 	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
 	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194)
 	... 159 common frames omitted
-2025-06-21 20:12:41 INFO  [http-nio-8080-exec-5] n.e.journalApp.service.UserService - Details
+2025-06-22 23:29:59 INFO  [http-nio-8080-exec-8] n.e.journalApp.service.UserService - Details
 org.springframework.dao.DataIntegrityViolationException: could not execute statement [Duplicate entry 'Deenu' for key 'users_details.UK_r1nre0dv7fm0trc880htuooot'] [insert into users_details (email,password,sentiment_analysis,user_name) values (?,?,?,?)]; SQL [insert into users_details (email,password,sentiment_analysis,user_name) values (?,?,?,?)]; constraint [users_details.UK_r1nre0dv7fm0trc880htuooot]
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290)
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
@@ -202,7 +199,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
-	at jdk.proxy2/jdk.proxy2.$Proxy119.save(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy120.save(Unknown Source)
 	at net.engineeringdigest.journalApp.service.UserService.saveNewUser(UserService.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -334,11 +331,11 @@ Caused by: org.hibernate.exception.ConstraintViolationException: could not execu
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364)
-	at jdk.proxy2/jdk.proxy2.$Proxy113.persist(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy114.persist(Unknown Source)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
-	at jdk.proxy2/jdk.proxy2.$Proxy113.persist(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy114.persist(Unknown Source)
 	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:618)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -373,7 +370,7 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'D
 	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
 	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194)
 	... 159 common frames omitted
-2025-06-21 20:12:41 WARN  [http-nio-8080-exec-5] n.e.journalApp.service.UserService - Warning Alert 
+2025-06-22 23:29:59 WARN  [http-nio-8080-exec-8] n.e.journalApp.service.UserService - Warning Alert 
 org.springframework.dao.DataIntegrityViolationException: could not execute statement [Duplicate entry 'Deenu' for key 'users_details.UK_r1nre0dv7fm0trc880htuooot'] [insert into users_details (email,password,sentiment_analysis,user_name) values (?,?,?,?)]; SQL [insert into users_details (email,password,sentiment_analysis,user_name) values (?,?,?,?)]; constraint [users_details.UK_r1nre0dv7fm0trc880htuooot]
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290)
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
@@ -387,7 +384,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
-	at jdk.proxy2/jdk.proxy2.$Proxy119.save(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy120.save(Unknown Source)
 	at net.engineeringdigest.journalApp.service.UserService.saveNewUser(UserService.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -519,11 +516,11 @@ Caused by: org.hibernate.exception.ConstraintViolationException: could not execu
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364)
-	at jdk.proxy2/jdk.proxy2.$Proxy113.persist(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy114.persist(Unknown Source)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
-	at jdk.proxy2/jdk.proxy2.$Proxy113.persist(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy114.persist(Unknown Source)
 	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:618)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -558,7 +555,7 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'D
 	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
 	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194)
 	... 159 common frames omitted
-2025-06-21 20:12:41 DEBUG [http-nio-8080-exec-5] n.e.journalApp.service.UserService - Debugging
+2025-06-22 23:29:59 DEBUG [http-nio-8080-exec-8] n.e.journalApp.service.UserService - Debugging
 org.springframework.dao.DataIntegrityViolationException: could not execute statement [Duplicate entry 'Deenu' for key 'users_details.UK_r1nre0dv7fm0trc880htuooot'] [insert into users_details (email,password,sentiment_analysis,user_name) values (?,?,?,?)]; SQL [insert into users_details (email,password,sentiment_analysis,user_name) values (?,?,?,?)]; constraint [users_details.UK_r1nre0dv7fm0trc880htuooot]
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290)
 	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
@@ -572,7 +569,7 @@ org.springframework.dao.DataIntegrityViolationException: could not execute state
 	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
-	at jdk.proxy2/jdk.proxy2.$Proxy119.save(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy120.save(Unknown Source)
 	at net.engineeringdigest.journalApp.service.UserService.saveNewUser(UserService.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -704,11 +701,11 @@ Caused by: org.hibernate.exception.ConstraintViolationException: could not execu
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364)
-	at jdk.proxy2/jdk.proxy2.$Proxy113.persist(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy114.persist(Unknown Source)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
-	at jdk.proxy2/jdk.proxy2.$Proxy113.persist(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy114.persist(Unknown Source)
 	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:618)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)

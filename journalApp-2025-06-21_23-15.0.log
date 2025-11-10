@@ -1,0 +1,3 @@
+2025-06-21 23:15:59 INFO  [main] n.e.journalApp.JournalApplication - Starting JournalApplication using Java 21.0.7 with PID 1176 (D:\journalApp\journalApp\target\classes started by pdeen in D:\journalApp)
+2025-06-21 23:15:59 DEBUG [main] n.e.journalApp.JournalApplication - Running with Spring Boot v3.2.4, Spring v6.1.5
+2025-06-21 23:15:59 INFO  [main] n.e.journalApp.JournalApplication - The following 1 profile is active: "dev"

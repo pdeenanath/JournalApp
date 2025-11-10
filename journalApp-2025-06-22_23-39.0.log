@@ -1,0 +1,25 @@
+2025-06-22 23:39:05 INFO  [main] n.e.journalApp.JournalApplication - Starting JournalApplication using Java 21.0.7 with PID 10384 (D:\journalApp\journalApp\target\classes started by pdeen in D:\journalApp)
+2025-06-22 23:39:05 DEBUG [main] n.e.journalApp.JournalApplication - Running with Spring Boot v3.2.4, Spring v6.1.5
+2025-06-22 23:39:05 INFO  [main] n.e.journalApp.JournalApplication - The following 1 profile is active: "dev"
+2025-06-22 23:39:06 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-22 23:39:06 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 90 ms. Found 2 JPA repository interfaces.
+2025-06-22 23:39:07 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-22 23:39:07 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-22 23:39:07 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-22 23:39:07 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-22 23:39:08 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-22 23:39:08 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2593 ms
+2025-06-22 23:39:08 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-22 23:39:08 INFO  [main] com.zaxxer.hikari.HikariDataSource - d2 - Starting...
+2025-06-22 23:39:09 INFO  [main] com.zaxxer.hikari.pool.HikariPool - d2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f4a605f
+2025-06-22 23:39:09 INFO  [main] com.zaxxer.hikari.HikariDataSource - d2 - Start completed.
+2025-06-22 23:39:09 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-22 23:39:11 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-22 23:39:11 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-22 23:39:12 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b407ac7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4c5ae26d, org.springframework.security.web.context.SecurityContextHolderFilter@1ecbb787, org.springframework.security.web.header.HeaderWriterFilter@33293b34, org.springframework.web.filter.CorsFilter@5578ed7e, org.springframework.security.web.authentication.logout.LogoutFilter@1ddc5857, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@58fbecde, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1dc987b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4f09d998, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5dd5422f, org.springframework.security.web.access.ExceptionTranslationFilter@700596f9, org.springframework.security.web.access.intercept.AuthorizationFilter@4ff00844]
+2025-06-22 23:39:12 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-22 23:39:12 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-06-22 23:39:12 INFO  [main] n.e.journalApp.JournalApplication - Started JournalApplication in 8.241 seconds (process running for 9.185)
+2025-06-22 23:39:18 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-22 23:39:18 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-22 23:39:18 INFO  [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms

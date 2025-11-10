@@ -1,0 +1,22 @@
+2025-06-21 23:18:27 INFO  [main] n.e.journalApp.JournalApplication - Starting JournalApplication using Java 21.0.7 with PID 5884 (D:\journalApp\journalApp\target\classes started by pdeen in D:\journalApp)
+2025-06-21 23:18:27 DEBUG [main] n.e.journalApp.JournalApplication - Running with Spring Boot v3.2.4, Spring v6.1.5
+2025-06-21 23:18:27 INFO  [main] n.e.journalApp.JournalApplication - The following 1 profile is active: "dev"
+2025-06-21 23:18:28 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-21 23:18:28 INFO  [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 2 JPA repository interfaces.
+2025-06-21 23:18:29 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-21 23:18:29 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-21 23:18:29 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-21 23:18:29 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-21 23:18:29 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-21 23:18:29 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2095 ms
+2025-06-21 23:18:30 INFO  [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-21 23:18:30 INFO  [main] com.zaxxer.hikari.HikariDataSource - d2 - Starting...
+2025-06-21 23:18:30 INFO  [main] com.zaxxer.hikari.pool.HikariPool - d2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41059616
+2025-06-21 23:18:30 INFO  [main] com.zaxxer.hikari.HikariDataSource - d2 - Start completed.
+2025-06-21 23:18:30 WARN  [main] org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-21 23:18:32 INFO  [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-21 23:18:32 WARN  [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-21 23:18:33 INFO  [main] o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@569b3009, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23d0f6be, org.springframework.security.web.context.SecurityContextHolderFilter@128ebca1, org.springframework.security.web.header.HeaderWriterFilter@13e6ab86, org.springframework.web.filter.CorsFilter@48cebb78, org.springframework.security.web.authentication.logout.LogoutFilter@3d6c7152, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@72e5206, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10efb806, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4dfe56dc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45c10678, org.springframework.security.web.access.ExceptionTranslationFilter@7057d9f4, org.springframework.security.web.access.intercept.AuthorizationFilter@55b5ce0f]
+2025-06-21 23:18:33 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-06-21 23:18:33 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-06-21 23:18:33 INFO  [main] n.e.journalApp.JournalApplication - Started JournalApplication in 6.826 seconds (process running for 7.66)

@@ -1,0 +1,1 @@
+2025-06-30 23:53:31 INFO  [http-nio-8080-exec-2] n.e.journalApp.service.RedisService - Cache HIT for key: Weather_of_Mumbai

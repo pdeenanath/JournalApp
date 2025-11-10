@@ -1,0 +1,1 @@
+2025-06-22 23:30:59 WARN  [http-nio-8080-exec-9] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot coerce empty String ("") to `net.engineeringdigest.journalApp.enums.Sentiment` value (but could if coercion was enabled using `CoercionConfig`)]

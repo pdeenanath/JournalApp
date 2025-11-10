@@ -1,0 +1,27 @@
+2025-08-02 23:51:00 INFO  [main] n.e.journalApp.JournalApplication - Starting JournalApplication using Java 21.0.7 with PID 17832 (D:\journalApp\journalApp\target\classes started by pdeen in D:\journalApp)
+2025-08-02 23:51:00 DEBUG [main] n.e.journalApp.JournalApplication - Running with Spring Boot v3.2.4, Spring v6.1.5
+2025-08-02 23:51:00 INFO  [main] n.e.journalApp.JournalApplication - The following 1 profile is active: "dev"
+2025-08-02 23:51:02 WARN  [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Configuration class 'SecurityConfig' contains overloaded @Bean methods with name 'authenticationManager'. Use unique method names for separate bean definitions (with individual conditions etc) or switch '@Configuration.enforceUniqueMethods' to 'false'.
+Offending resource: class path resource [net/engineeringdigest/journalApp/config/SecurityConfig.class]
+2025-08-02 23:51:02 INFO  [main] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-02 23:51:02 ERROR [main] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: @Configuration class 'SecurityConfig' contains overloaded @Bean methods with name 'authenticationManager'. Use unique method names for separate bean definitions (with individual conditions etc) or switch '@Configuration.enforceUniqueMethods' to 'false'.
+Offending resource: class path resource [net/engineeringdigest/journalApp/config/SecurityConfig.class]
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:72)
+	at org.springframework.context.annotation.ConfigurationClass.validate(ConfigurationClass.java:230)
+	at org.springframework.context.annotation.ConfigurationClassParser.validate(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:417)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:289)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:788)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:606)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at net.engineeringdigest.journalApp.JournalApplication.main(JournalApplication.java:23)
